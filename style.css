@@ -1,0 +1,318 @@
+:root {
+  font-size: 20px;
+  --white: #f7f7f7;
+  --black: #292929;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h2, h3, h4 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 860px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1040px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1220px;
+  }
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+a.button-link {
+  display: inline-block;
+  color: var(--white);
+  margin-right: .25rem;
+  padding: .5rem 1rem;
+  background: var(--black);
+}
+
+a.button-link ~ a.button-link {
+  margin-left: 0;
+  margin-left: .25rem;
+}
+
+a.button-link svg {
+  height: 1.2em;
+  margin-left: .25em;
+}
+
+a.email-link svg {
+  height: 1.1em;
+}
+
+
+#header-bar {
+  width: 100%;
+  /* height: 2rem; */
+  background: var(--black);
+}
+
+#header-bar .languages {
+  display: flex;
+  justify-content: flex-end;
+  padding: .25rem 0;
+}
+
+#header-bar .languages a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: .8rem;
+  margin-left: 1rem;
+}
+
+#header-bar .languages a::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 13px;
+  margin-right: .25rem;
+}
+
+#header-bar .languages a.english::before {
+  background: url(img/lang-flags/us.png) no-repeat center/cover;
+}
+
+#header-bar .languages a.brazilian-portuguese::before {
+  background: url(img/lang-flags/br.png) no-repeat center/cover;
+}
+
+
+#header .main-logo {
+  text-align: center; 
+}
+
+#header .main-logo {
+  margin: 2rem 0;
+}
+
+#header .main-logo img {
+  height: 10rem;
+  width: auto;
+}
+
+
+#meet-us {
+  margin-bottom: 2rem;
+}
+
+#videos {
+  color: var(--white);
+  background: var(--black);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+#videos p {
+  margin-top: 0;
+}
+
+#videos ul.videos {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  padding-left: 0;
+  margin-bottom: 0;
+  
+  list-style: none;
+}
+
+#videos ul.videos li {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+
+  padding-right: 1rem;
+}
+
+#videos ul.videos li iframe {
+  width: 100%;
+}
+
+#videos ul.videos li:last-child {
+  scroll-snap-align: end;
+  padding-right: 0rem;
+}
+
+
+#meetings {
+  margin-bottom: 2rem;
+}
+
+#meetings h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+#meetings .meetings-strip {
+  margin-top: 2rem;
+  display: none;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33.33333333% 33.33333333% 33.33333333%;
+  height: 750px;
+  object-fit: cover;
+}
+
+#meetings .meetings-strip img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#donate {
+  color: var(--white);
+  background: var(--black);
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+#donate .helping-item {
+  color: var(--white);
+  height: 300px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#donate .unreached-people {
+  background: url(img/unreached-people-group.jpg) no-repeat center/cover;
+}
+
+#donate .church-implantation {
+  background: url(img/church-planting.jpg) no-repeat center/cover;
+}
+
+#donate .austin-texas {
+  background: url(img/homeless-austin.jpg) no-repeat center/cover;
+}
+
+#donate .helping-item > span {
+  background: rgba(0, 0, 0, 0.7);
+  line-height: 0px;
+  font-size: 30px;
+}
+
+#donate .helping-item ~ p {
+  margin-bottom: 2.5rem;
+}
+
+#donate .button-link {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+#contact-us {
+  margin-bottom: 2rem;
+}
+
+
+#footer {
+  color: var(--white);
+  background: var(--black);
+  padding: 2rem 0;
+}
+
+#footer img {
+  height: 3rem;
+  width: auto;
+}
+
+#footer address {
+  margin: 1rem 0 0 0;
+}
+
+#footer address ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer address li svg {
+  width: 1em;
+  height: 1em;
+}
+
+#footer address li a {
+  color: var(--white);
+}
+
+@media (min-width: 576px) {
+  #videos ul.videos li {
+    flex-basis: auto;
+  }
+  
+  #videos ul.videos li iframe {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  #header .main-logo img {
+    height: 12rem;
+  }
+
+  #meet-us h2 {
+    line-height: .65em;
+  }
+
+  #meetings h2 {
+    font-size: 1.75rem;
+    width: 80%;
+  }
+  
+  #meetings .meetings-strip {
+    display: grid;
+  }
+
+  #footer address {
+    margin: 0;  
+  }
+}
+
+@media (min-width: 992px) {
+  #donate .helping-item ~ p {
+    margin-bottom: 1rem;
+  }
+}
