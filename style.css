@@ -193,11 +193,10 @@ a.email-link svg {
 
 #meetings .meetings-strip {
   margin-top: 2rem;
-  display: none;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 33.33333333% 33.33333333% 33.33333333%;
-  height: 750px;
-  object-fit: cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 16.66667% 16.66667% 16.66667% 16.66667% 16.66667% 16.66667%;
+  height: 1250px;
 }
 
 #meetings .meetings-strip img {
@@ -308,7 +307,9 @@ a.email-link svg {
   }
   
   #meetings .meetings-strip {
-    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33333333% 33.33333333% 33.33333333%;
+    height: 750px;
   }
 
   #footer address {
