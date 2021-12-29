@@ -166,14 +166,15 @@ a.email-link svg {
 }
 
 #videos ul.videos li {
-  flex: 0 0 100%;
+  flex: 0 0 auto;
   scroll-snap-align: start;
 
   padding-right: 1rem;
 }
 
 #videos ul.videos li iframe {
-  width: 100%;
+  width: 50vw;
+  height: auto;
 }
 
 #videos ul.videos li:last-child {
@@ -283,12 +284,9 @@ a.email-link svg {
 }
 
 @media (min-width: 576px) {
-  #videos ul.videos li {
-    flex-basis: auto;
-  }
-  
   #videos ul.videos li iframe {
     width: 480px;
+    height: 270px;
   }
 }
 
