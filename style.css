@@ -27,6 +27,11 @@ p {
   margin-top: 1rem;
 }
 
+em {
+  font-style: normal;
+  font-weight: 600;
+}
+
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 860px;
