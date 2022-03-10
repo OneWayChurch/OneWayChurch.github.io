@@ -27,6 +27,10 @@ p {
   margin-top: 1rem;
 }
 
+p a {
+  color: inherit;
+}
+
 em {
   font-style: normal;
   font-weight: 600;
@@ -274,9 +278,16 @@ a.email-link svg {
   margin: 0;
 }
 
+#footer address li {
+  display: flex;
+}
+
 #footer address li svg {
+  flex-shrink: 0;
   width: 1em;
   height: 1em;
+  margin-top: 5px;
+  margin-right: 6px;
 }
 
 #footer address li a {
